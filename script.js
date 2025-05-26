@@ -82,4 +82,14 @@ document.querySelectorAll('.skill-category, .experience-card, .education, .certi
 // Run animation on scroll
 window.addEventListener('scroll', animateOnScroll);
 // Run once on load
-window.addEventListener('load', animateOnScroll); 
+window.addEventListener('load', animateOnScroll);
+
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburger-menu');
+const navLinks = document.getElementById('nav-links');
+
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+} 
